@@ -2,7 +2,7 @@
     const template = `<div>
             <h1>Dashboard</h1>
             <div>
-                <dashboard :hobbies='hobbies'></dashboard></div>
+                <dashboard :hobbies='hobbies' @delete_hobby='deleteHobby'></dashboard></div>
             <div>
             <h1>Home List</h1>
             <div>
@@ -27,6 +27,9 @@
         methods: {
             deleteEmp(index) {
                 this.empList.splice(index, 1);
+            }, 
+            deleteHobby(index) {
+                this.hobbies.splice(index, 1);
             }
         },
         components: {
