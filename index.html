@@ -9,15 +9,23 @@
 </head>
 
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <app-home></app-home>
+    </div>
 </body>
 
 <script src="./node_modules/vue/dist/vue.js"></script>
 <script src="./components/dashboard.js"></script>
+<script src="./components/itemList.js"></script>
 <script src="./components/homeList.js"></script>
 <script src="./components/appHome.js"></script>
 <script>
-
+    var vm = new Vue({
+        el: '#app',
+        components: {
+            appHome
+        }
+    })
 </script>
 
 </html>
