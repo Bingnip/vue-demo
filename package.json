@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Bingnip/vue-demo#readme",
   "dependencies": {
+    "axios": "^0.24.0",
     "vue": "^2.6.10"
   }
 }
