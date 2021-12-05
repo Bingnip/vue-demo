@@ -1,5 +1,5 @@
 ; (function () {
-    const template = '<div><div v-for="(hobby, index) in hobbies" :key="index"><div>{{hobby}}</div></div></div>';
+    const template = `<div><div v-for="(hobby, index) in hobbies" :key="index"><div>{{hobby}}</div></div></div>`;
 
     window.dashboard = {
         template,

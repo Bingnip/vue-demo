@@ -1,7 +1,15 @@
 ; (function () {
-    const template = "<div><h1>Dashboard</h1><div><dashboard :hobbies='hobbies'></dashboard></div>" + 
-        "<div><h1>Home List</h1><div><home-list :empList='empList'></home-list></div></div>"
-    +"</div>";
+    const template = `<div>
+            <h1>Dashboard</h1>
+            <div>
+                <dashboard :hobbies='hobbies'></dashboard></div>
+            <div>
+            <h1>Home List</h1>
+            <div>
+                <home-list :empList='empList' :deleteEmp='deleteEmp'></home-list>
+            </div>
+        </div>
+        </div>`;
 
     window.appHome = {
         template,
@@ -14,6 +22,11 @@
                     { id: 3, name: '小梦3', salary: 80003 }, 
                     { id: 4, name: '小梦4', salary: 80004 }
                 ]
+            }
+        },
+        methods: {
+            deleteEmp(index) {
+                this.empList.splice(index, 1);
             }
         },
         components: {
