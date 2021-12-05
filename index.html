@@ -10,7 +10,10 @@
 
 <body>
     <div id="app">
-        <app-home></app-home>
+        <app-home>
+            <!-- 这里向子组件appHome传递标签+数据 -->
+            <h1 slot="dashboard">{{title}}</h1>
+        </app-home>
     </div>
 </body>
 
@@ -24,6 +27,11 @@
         el: '#app',
         components: {
             appHome
+        },
+        data () {
+            return {
+                title: '仪表盘'
+            }
         }
     })
 </script>

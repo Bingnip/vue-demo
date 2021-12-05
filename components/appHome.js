@@ -1,6 +1,7 @@
 ; (function () {
     const template = `<div>
-            <h1>Dashboard</h1>
+            // 接收要用slot标签，name就是父组件定义的
+            <slot name="dashboard"></slot>
             <div>
                 <dashboard :hobbies='hobbies' @delete_hobby='deleteHobby'></dashboard></div>
             <div>
