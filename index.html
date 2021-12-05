@@ -9,27 +9,7 @@
 </head>
 
 <body>
-    <div id="app">
-        {{ msg }}
-        <p v-my-directive="content"></p>
-    </div>
+
 </body>
-<script src="node_modules/vue/dist/vue.js"></script>
-<script src="./MyPlugins.js"></script>
-<script>
-    Vue.use(MyPlugins)
-
-    var vm = new Vue({
-        el: '#app',
-        data: {
-            msg: 'hello world',
-            content: '全局指令content内容'
-        }
-    })
-
-    Vue.myGlobalMethod();
-
-    vm.$myMethod('mengxuegu');
-</script>
 
 </html>
