@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Bingnip/vue-demo#readme",
   "dependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-router": "^3.5.3"
   }
 }
