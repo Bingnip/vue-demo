@@ -1,0 +1,6 @@
+[ 
+    {"id": 1, "name": "通讯", "salary": 9899}, 
+    {"id": 2, "name": "铁路", "salary": 9999}, 
+    {"id": 3, "name": "航天", "salary": 9099}, 
+    {"id": 4, "name": "5G", "salary": 9199} 
+] 
