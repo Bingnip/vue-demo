@@ -1,2 +1,3 @@
-var bar = require('./bar.js');
-bar();
+import msg from './bar'
+
+console.log(msg);

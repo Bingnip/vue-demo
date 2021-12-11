@@ -1,3 +1,5 @@
-module.exports = function () {
-    console.log('我是bar模块');
-}
+const msg = {
+    msg: 'hello iiiiii'
+};
+
+export default msg
