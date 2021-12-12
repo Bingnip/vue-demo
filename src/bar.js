@@ -1,5 +1,5 @@
 const msg = {
-    msg: 'hello 33333'
+    msg: 'hello 222222'
 };
 
 export default msg
