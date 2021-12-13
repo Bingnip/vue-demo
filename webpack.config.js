@@ -29,5 +29,8 @@ module.exports = {
     new htmlWebpackPlugin({
       template: './index.html'
     })
-  ]
+  ],
+  devServer: {
+    contentBase: './dist'
+  }
 }
