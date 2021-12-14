@@ -1,4 +1,1 @@
-import msg from './bar'
-import './css/style.css'
-
-console.log(msg);
+import App from './app.vue'
