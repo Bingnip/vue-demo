@@ -1,6 +1,7 @@
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const vueLoaderPlugin = require('vue-loader/lib/plugin');
+const webpack = require('webpack')
 
 module.exports = {
   mode: 'development',
@@ -34,10 +35,12 @@ module.exports = {
     new vueLoaderPlugin,
     new htmlWebpackPlugin({
       template: './index.html'
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    hot: true //开启HMR
   },
   // resolve: {
   //   alias: {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Foo 子组件</h1>
+    <h1>Foo 子组件8888</h1>
   </div>
 </template>
 
