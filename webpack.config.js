@@ -38,5 +38,10 @@ module.exports = {
   ],
   devServer: {
     contentBase: './dist'
-  }
+  },
+  // resolve: {
+  //   alias: {
+  //     'vue$': 'vue/dist/vue.js'
+  //   }
+  // }
 }
